@@ -11,3 +11,16 @@ def exchange(currency_from,currency_to,amount_from):
         if zfc.find(".")==1 and float(zfc)!=amount_from:
             jieg=float(zfc)    
     return(jieg)
+
+def test_it():
+    assert(exchange('USD','EUR',2.5)==exchange('USD','EUR',2.5))
+
+frm=input()
+tto=input()
+amt=input()
+
+def testAll():
+    test_it()
+    print("All tests passed")
+
+print(exchange(frm,tto,amt))
